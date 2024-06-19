@@ -1,3 +1,6 @@
+# Copyright (c) 2024, Bruno Monteiro
+# All rights reserved.
+
 from lib.libarea import *
 
 diameter = 35
