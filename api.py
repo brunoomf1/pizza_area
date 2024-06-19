@@ -1,3 +1,6 @@
+# Copyright (c) 2024, Bruno Monteiro
+# All rights reserved.
+
 import fastapi
 from lib.libarea import *
 from lib.libdb import *
