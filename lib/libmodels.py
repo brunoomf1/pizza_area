@@ -26,3 +26,14 @@ class UFsClass(str, Enum):
     SP = 'SP'  # São Paulo
     SE = 'SE'  # Sergipe
     TO = 'TO'  # Tocantins
+    
+class pizzaParams():
+    pizza = {
+        "n_people": None, 
+        "area": None, 
+        "diameter": None, 
+        "n_slice": None
+    }
+    
+    def getModel(self):
+        return self.pizza

@@ -1,5 +1,6 @@
 import math as mt
 from lib.libmessage import *
+from lib.libmodels import *
 
 DEFAULT_N_SLICE = 12
 
@@ -56,4 +57,9 @@ class pizza_area():
   
   def get_pizza_info(self):
     n_slice = self.n_slice_for_people()
-    return self.n_people, self.n_area, self.d, n_slice
+    response = pizzaParams().getModel()
+    response["n_people"] = self.n_people
+    response["n_area"] = self.n_area
+    response["diameter"] = self.d
+    response["n_slice"] = n_slice
+    return response
