@@ -26,3 +26,10 @@ def getPlacesUF(table="pizzas", columns='*',filters=None):
         query = f"select {columns} from {table} where uf={filters}"
         return db_instance.send_query(query)
     
+def get_list_uf():
+     query = f"select * from uf"
+     return db_instance.send_query(query)
+ 
+def get_uf(uf=str):
+    query = f"select * from uf where uf_abbreviation='{uf}'"
+    return db_instance.send_query(query)
